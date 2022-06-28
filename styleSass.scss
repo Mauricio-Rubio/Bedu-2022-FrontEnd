@@ -1,21 +1,34 @@
+// Variables
+$color-principal: #fffbf7;
+$letra-principal: "Open Sans", sans-serif;
+$letra-secundaria: "Alegreya", serif;
+$color-texto-parrafos: #8b8b8bcc;
+$color-navbar: #fffbf7;
+$color-texto-h:#025157; 
+$color-texto-secundario:#46484c; 
+$button-color:#025157; 
+
 body {
-  background-color: #fffbf7 !important;
-  font-family: "Open Sans", sans-serif;
+  // background-color: #fffbf7 !important;
+  background-color: $color-principal !important;
+  font-family: $letra-principal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 p {
-  color: #8b8b8bcc;
+  color: $color-texto-parrafos;
 }
 
 nav {
-  background-color: #fffbf7;
+  background-color:$color-navbar; 
 }
 
+nav button {} 
+
 button {
-  background-color: #025157;
+  background-color: $button-color;
   color: #fff;
   border: none;
   border-top-left-radius: 0;
@@ -52,19 +65,19 @@ button {
 
 .main {
   width: 100%;
-  margin-top: 211px;
+  margin-top: 290px;
   text-align: center;
 }
 .main h1 {
-  color: #025157;
-  font-family: "Alegreya", serif;
+  color: $color-texto-h;
+  font-family:$letra-secundaria; 
   font-size: 60px;
   margin-bottom: 24px;
   font-weight: 900;
 }
 
 .main h4 {
-  color: #46484c;
+  color: $color-texto-secundario;
   font-family: "Slabo 27px", serif;
   font-size: 20px;
   margin-bottom: 30px;
@@ -79,10 +92,10 @@ figure.intro > img {
 }
 
 .section-promo h3 {
-  font-family: "Alegreya", serif;
+  font-family: $letra-secundaria;
   font-size: 40px;
   line-height: 48px;
-  color: #025157;
+  color: $color-texto-h;
   margin-bottom: 30px;
 }
 .section-promo-text p {
