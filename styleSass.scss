@@ -2,11 +2,14 @@
 $color-principal: #fffbf7;
 $letra-principal: "Open Sans", sans-serif;
 $letra-secundaria: "Alegreya", serif;
+$letra-terciaria: "Slabo 27px", serif;
 $color-texto-parrafos: #8b8b8bcc;
 $color-navbar: #fffbf7;
 $color-texto-h:#025157; 
 $color-texto-secundario:#46484c; 
+$color-texto-promo:#343434;
 $button-color:#025157; 
+$button-color-text: #fff;
 
 body {
   // background-color: #fffbf7 !important;
@@ -29,7 +32,7 @@ nav button {}
 
 button {
   background-color: $button-color;
-  color: #fff;
+  color: $button-color-text;
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -67,21 +70,21 @@ button {
   width: 100%;
   margin-top: 290px;
   text-align: center;
-}
-.main h1 {
-  color: $color-texto-h;
-  font-family:$letra-secundaria; 
-  font-size: 60px;
-  margin-bottom: 24px;
-  font-weight: 900;
+  h1 {
+      color: $color-texto-h;
+      font-family:$letra-secundaria; 
+      font-size: 60px;
+      margin-bottom: 24px;
+      font-weight: 900;
+    }
+  h4 {
+    color: $color-texto-secundario;
+    font-family: $letra-terciaria;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
-.main h4 {
-  color: $color-texto-secundario;
-  font-family: "Slabo 27px", serif;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
 .signup-form {
   display: flex;
   justify-content: center;
@@ -100,7 +103,7 @@ figure.intro > img {
 }
 .section-promo-text p {
   font-size: 16px;
-  color: #343434;
+  color: $color-texto-promo;
   line-height: 1.5;
   margin-bottom: 20px;
 }
